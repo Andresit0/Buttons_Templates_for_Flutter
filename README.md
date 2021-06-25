@@ -2,10 +2,6 @@
 
 This template contains some buttons to use inside the front-end.
 
-    Widget btnText(Color btnBackground, Color clickColor, double borderRadius,double borderWidth, Color borderColor, Widget text, Function onPressed)
-
-    Widget btnIcon(Color btnBackground,Color clickColor,Color iconColor,double iconSize,double borderRadius,double borderWidth,Color borderColor,IconData btnIcon,Function onPressed)
-
     Widget btnIconLTextR(Color btnBackground,EdgeInsets paddingBetweenIconText,Color clickColor,Color iconColor,double iconSize,double borderRadius,double borderWidth,Color borderColor,IconData btnIcon,Widget text,Function onPressed) 
 
     Widget btnIconUTextD(Color btnBackground,EdgeInsets paddingBetweenIconText,Color clickColor,Color iconColor,double iconSize,double borderRadius,double borderWidth,Color borderColor,IconData btnIcon,Widget text,Function onPressed) 
@@ -13,6 +9,10 @@ This template contains some buttons to use inside the front-end.
     Widget btnTextLIconR(Color btnBackground,EdgeInsets paddingBetweenIconText,Color clickColor,Color iconColor,double iconSize,double borderRadius,double borderWidth,Color borderColor,IconData btnIcon,Widget text,Function onPressed) 
 
     Widget btnTextUIconD(Color btnBackground,EdgeInsets paddingBetweenIconText,Color clickColor,Color iconColor,double iconSize,double borderRadius,double borderWidth,Color borderColor,IconData btnIcon,Widget text,Function onPressed) 
+
+    Widget btnText(Color btnBackground, Color clickColor, double borderRadius,double borderWidth, Color borderColor, Widget text, Function onPressed)
+
+    Widget btnIcon(Color btnBackground,Color clickColor,Color iconColor,double iconSize,double borderRadius,double borderWidth,Color borderColor,IconData btnIcon,Function onPressed)
 
 ![Image1 of App](example1.png)
 
