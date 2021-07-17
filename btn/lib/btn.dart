@@ -10,7 +10,7 @@ Widget btnText(Color btnBackground, Color clickColor, double borderRadius,
           borderRadius: BorderRadius.circular(borderRadius),
           side: BorderSide(color: borderColor, width: borderWidth)),
     ),
-    onPressed: () => onPressed,
+    onPressed: () => onPressed(),
     child: Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -41,7 +41,7 @@ Widget btnIcon(
           borderRadius: BorderRadius.circular(borderRadius),
           side: BorderSide(color: borderColor, width: borderWidth)),
     ),
-    onPressed: () => onPressed,
+    onPressed: () => onPressed(),
     child: Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -80,7 +80,7 @@ Widget btnIconLTextR(
           borderRadius: BorderRadius.circular(borderRadius),
           side: BorderSide(color: borderColor, width: borderWidth)),
     ),
-    onPressed: () => onPressed,
+    onPressed: () => onPressed(),
     child: Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -123,7 +123,7 @@ Widget btnIconUTextD(
           borderRadius: BorderRadius.circular(borderRadius),
           side: BorderSide(color: borderColor, width: borderWidth)),
     ),
-    onPressed: () => onPressed,
+    onPressed: () => onPressed(),
     child: Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -166,7 +166,7 @@ Widget btnTextLIconR(
           borderRadius: BorderRadius.circular(borderRadius),
           side: BorderSide(color: borderColor, width: borderWidth)),
     ),
-    onPressed: () => onPressed,
+    onPressed: () => onPressed(),
     child: Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -209,7 +209,7 @@ Widget btnTextUIconD(
           borderRadius: BorderRadius.circular(borderRadius),
           side: BorderSide(color: borderColor, width: borderWidth)),
     ),
-    onPressed: () => onPressed,
+    onPressed: () => onPressed(),
     child: Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
