@@ -231,3 +231,38 @@ Widget btnTextUIconD(
     ),
   );
 }
+
+Widget btnImg(
+    Color btnBackground,
+    Color clickColor,
+    double imgSize,
+    double borderRadius,
+    double borderWidth,
+    Color borderColor,
+    String btnImg,
+    Function onPressed) {
+  return TextButton(
+    style: TextButton.styleFrom(
+      backgroundColor: btnBackground,
+      primary: clickColor,
+      shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(borderRadius),
+          side: BorderSide(color: borderColor, width: borderWidth)),
+    ),
+    onPressed: () => onPressed(),
+    child: Container(
+        width: imgSize,
+        height: imgSize,
+        child: btnImg.substring(0, 4) == 'http'
+            ? Image.network(
+                btnImg,
+                fit: BoxFit.fitHeight,
+              )
+            : Image(
+                image: AssetImage(
+                  btnImg,
+                ),
+                fit: BoxFit.fitHeight,
+              )),
+  );
+}

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'btn.dart';
+import 'expandableButton.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: SingleChildScrollView(
         child: Column(
+          //use of btn.dart
           children: [
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
@@ -193,7 +195,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         Colors.purpleAccent,
                         Colors.purple,
                         Colors.black,
-                        30,
+                        20,
                         360,
                         2,
                         Colors.black,
@@ -203,8 +205,55 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(10),
+                    width: 100,
+                    height: 100,
+                    child: btnImg(
+                        Colors.black,
+                        Colors.blue,
+                        50,
+                        36,
+                        3,
+                        Colors.blue,
+                        'https://picsum.photos/250?image=9',
+                        () {}),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
+      ),
+      //use of expandableButton.dart
+      floatingActionButton: ExpandableButton(
+        distance: 112.0,
+        children: [
+          ActionButton(
+            onPressed: () {},
+            icon: const Icon(Icons.format_size),
+          ),
+          ActionButton(
+            onPressed: () {},
+            icon: const Icon(Icons.insert_photo),
+          ),
+          ActionButton(
+            onPressed: () {},
+            icon: const Icon(Icons.videocam),
+          ),
+          ActionButton(
+            onPressed: () {},
+            icon: const Icon(Icons.camera_enhance),
+          ),
+          ActionButton(
+            onPressed: () {},
+            icon: const Icon(Icons.camera),
+          ),
+        ],
       ),
     );
   }
